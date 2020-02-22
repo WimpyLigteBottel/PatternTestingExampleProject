@@ -12,3 +12,4 @@ very expensive to construct it.
 If you have a look at my PrimeCalculator it construct an model with primenumbers up to the amount specified and you can then
 quickly retrieve the primenumber you are looking for (ignore spot zero in list)
 ````
+### **Factory pattern**
