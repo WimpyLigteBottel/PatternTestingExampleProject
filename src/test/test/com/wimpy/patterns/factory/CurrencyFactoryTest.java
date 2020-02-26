@@ -12,25 +12,25 @@ public class CurrencyFactoryTest {
 
     @Test
     public void build_withSymbolOnly_expectCorrectReturnedClass() {
-        assertTrue(CurrencyFactory.build("R") instanceof Rand);
-        assertTrue(CurrencyFactory.build("E") instanceof Euro);
-        assertTrue(CurrencyFactory.build("$") instanceof Dollar);
+        assertTrue(ImportantPersonFactory.build("R") instanceof Rand);
+        assertTrue(ImportantPersonFactory.build("E") instanceof Euro);
+        assertTrue(ImportantPersonFactory.build("$") instanceof Dollar);
 
     }
 
     @Test(expected = IllegalArgumentException.class)
     public void build_withWrongDollarSymbol_expectException() {
-        CurrencyFactory.build("Dollar");
+        ImportantPersonFactory.build("Dollar");
     }
 
     @Test(expected = IllegalArgumentException.class)
     public void build_withWrongDollarSymbol2_expectException() {
-        CurrencyFactory.build("DOLLAR");
+        ImportantPersonFactory.build("DOLLAR");
     }
 
     @Test(expected = IllegalArgumentException.class)
     public void build_withWrongDollarSymbol3_expectException() {
-        CurrencyFactory.build("$$$$$$$$$");
+        ImportantPersonFactory.build("$$$$$$$$$");
     }
 
     @Test
