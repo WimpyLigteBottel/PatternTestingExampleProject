@@ -14,7 +14,7 @@ quickly retrieve the primenumber you are looking for (ignore spot zero in list)
 ````
 ### **Factory pattern**
 
-````
+```
 For the factory pattern you are trying to hide business logic and how the object gets constructed.
 Generally you would build complex object and try to hide the logic away within factory.
 
