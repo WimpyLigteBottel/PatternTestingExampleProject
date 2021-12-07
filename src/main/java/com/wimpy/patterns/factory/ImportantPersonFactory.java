@@ -5,50 +5,54 @@ import java.util.List;
 
 public class ImportantPersonFactory {
 
-    private ImportantPersonFactory() {
-    }
+  private ImportantPersonFactory() {}
 
-    /*
-    Builds the list of directors that is currently with the company
+  /*
+  Builds the list of directors that is currently with the company
 
-     */
+   */
 
-    public List<String> build() {
+  public static List<String> build() {
 
-        List<String> directorsOfCompany = new ArrayList<>();
+    List<String> directorsOfCompany = new ArrayList<>();
 
-        directorsOfCompany.add("billy");
-        directorsOfCompany.add("tommy");
-        directorsOfCompany.add("Susan");
-        directorsOfCompany.add("alexa");
-        directorsOfCompany.add("Frank");
-        directorsOfCompany.add("Francis");
-        directorsOfCompany.add("Francois");
+    directorsOfCompany.add("billy");
+    directorsOfCompany.add("tommy");
+    directorsOfCompany.add("Susan");
+    directorsOfCompany.add("alexa");
+    directorsOfCompany.add("Frank");
+    directorsOfCompany.add("Francis");
+    directorsOfCompany.add("Francois");
 
-
-        return directorsOfCompany;
-    }
+    return directorsOfCompany;
+  }
 
 
-    /*
-    Example of method when sometime has passed and only few directors remain.
-    I would have the contents in  build method changed to something like below
+  public static List<String> build2() {
 
-    public List<String> build() {
+    List<String> directorsOfCompany = new ArrayList<>();
 
-        List<String> directorsOfCompany = new ArrayList<>();
+    directorsOfCompany.add("billy");
+    directorsOfCompany.add("tommy");
+    directorsOfCompany.add("Riaan");
+    directorsOfCompany.add("JP");
+    return directorsOfCompany;
+  }
 
-        directorsOfCompany.add("billy");
-        directorsOfCompany.add("tommy");
-        directorsOfCompany.add("Riaan");
-        directorsOfCompany.add("JP");
+  /*
+  Example of method when some time has passed and only few directors remain.
+  I would have the contents in  build method changed to something like below
 
+  public List<String> build() {
 
-        return directorsOfCompany;
-    }
+      List<String> directorsOfCompany = new ArrayList<>();
 
-
-     */
-
+      directorsOfCompany.add("billy");
+      directorsOfCompany.add("tommy");
+      directorsOfCompany.add("Riaan");
+      directorsOfCompany.add("JP");
+      return directorsOfCompany;
+  }
+   */
 
 }

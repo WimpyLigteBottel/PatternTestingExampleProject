@@ -26,3 +26,29 @@ I could always replace the names with Person object which could contain their de
 and i would not need to change other spots in my code too.
 
 ```
+
+### **Builder pattern**
+
+```
+For the builder pattern you would use this to construct very complex object or jusst a way to easily contruct object
+than doing it the trandition way see below.
+
+Note: When using builder patterns it does introduce some complexity but i wont say too much.
+Just don't go introduce it for everything if it is not needed
+
+Traditional:
+
+    Person person = new Person();
+    person.setAge("10");
+    person.setName("Marco");
+    person.setNickname("polo");
+
+Builder pattern:
+    
+    Person person = Person.Builder
+            .getInstance() << returns instantce of Person.builder()
+            .setAge("10") << returns builder and set age
+            .setName("marco") << returns builder and set name
+            .setNickname("Marco polo") << returns builder and set nickname
+            .build(); <<<< Creates the person object
+```
